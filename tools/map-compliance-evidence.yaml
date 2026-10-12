@@ -1,0 +1,29 @@
+name: map-compliance-evidence
+description: Map caller-provided evidence records to obligation identifiers and flag evidence gaps.
+input_schema:
+  type: object
+  properties:
+    obligations:
+      type: array
+      items:
+        type: object
+        additionalProperties: true
+    evidence_records:
+      type: array
+      items:
+        type: object
+        additionalProperties: true
+  required:
+    - obligations
+    - evidence_records
+output_schema:
+  type: object
+  properties:
+    mappings:
+      type: array
+    obligations_without_evidence:
+      type: array
+    unmatched_evidence:
+      type: array
+    note:
+      type: string

@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: contract-compliance-agent
+version: 1.0.0
+description: A framework-independent agent that organizes caller-provided contract clauses, obligations, evidence, and review questions for compliance tracking.
+author: Agent Passport Project
+license: MIT
+skills:
+  - clause-review
+  - obligation-tracking
+  - compliance-gap-analysis
+tools:
+  - review-contract-obligations
+  - map-compliance-evidence
+  - prepare-compliance-action-plan
+runtime:
+  max_turns: 20
+  timeout: 120
+tags:
+  - contracts
+  - compliance
+  - obligations
+  - risk-review

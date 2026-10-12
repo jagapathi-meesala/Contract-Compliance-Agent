@@ -1,0 +1,21 @@
+name: review-contract-obligations
+description: Organize supplied contract obligations and identify missing tracking fields.
+input_schema:
+  type: object
+  properties:
+    obligations:
+      type: array
+      items:
+        type: object
+        additionalProperties: true
+  required:
+    - obligations
+output_schema:
+  type: object
+  properties:
+    obligation_count:
+      type: integer
+    obligations:
+      type: array
+    note:
+      type: string

@@ -1,0 +1,19 @@
+name: prepare-compliance-action-plan
+description: Organize compliance follow-up actions by supplied priority, owner, and due date.
+input_schema:
+  type: object
+  properties:
+    actions:
+      type: array
+      items:
+        type: object
+        additionalProperties: true
+  required:
+    - actions
+output_schema:
+  type: object
+  properties:
+    action_count:
+      type: integer
+    actions:
+      type: array
